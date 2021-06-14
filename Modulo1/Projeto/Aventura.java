@@ -1,4 +1,4 @@
-package Projeto;
+package gen;
 
 import java.util.Scanner;
 
@@ -22,16 +22,16 @@ public class Aventura extends Filme {
         switch(n)
         {
             case 0:
-                System.out.println ("Agora vou transformar o milagre em rotina, o incrÌvel ser· visto todos os dias.");
+                System.out.println ("Agora vou transformar o milagre em rotina, o incr√≠vel ser√° visto todos os dias.");
                 break;
             case 1:
-                System.out.println ("A aventura est· l· fora...");
+                System.out.println ("A aventura est√° l√° fora...");
                 break;
             case 2:
-                System.out.println ("N„o vale a pena viver sonhando e se esquecer de viver. ..");
+                System.out.println ("N√£o vale a pena viver sonhando e se esquecer de viver. ..");
                 break;
             default:
-                System.out.println ("Ela lhe contou histÛrias, ele a ensinou a voar... Amavam-se, mas ele n„o queria crescer..");
+                System.out.println ("Ela lhe contou hist√≥rias, ele a ensinou a voar... Amavam-se, mas ele n√£o queria crescer..");
 
         }
     }
@@ -150,4 +150,4 @@ public class Aventura extends Filme {
         }
     }
 
-}	
+}

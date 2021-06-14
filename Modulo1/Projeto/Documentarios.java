@@ -1,4 +1,4 @@
-package Projeto;
+package gen;
 
 import java.util.Scanner;
 
@@ -9,7 +9,7 @@ public class Documentarios extends Filme {
 
     public Documentarios(String nome, String categoria, int duracao, String classificacaoIndicativa, int momento, String descricao)
     {
-        super(nome, "Document·rios", duracao, classificacaoIndicativa, momento, descricao);
+        super(nome, "Document√°rios", duracao, classificacaoIndicativa, momento, descricao);
 
     }
     @Override
@@ -21,21 +21,21 @@ public class Documentarios extends Filme {
         switch(n)
         {
             case 0:
-                System.out.println ("A maioria das coisas positivas e negativas que trazem mudanÁas ‡ civilizÁ„o humana "
-                        + "comeÁam com alguÈm. Uma pessoa. E uma pessoa n„o consegue fazer tudo, mas cada uma pode fazer uma parte.");
+                System.out.println ("A maioria das coisas positivas e negativas que trazem mudan√ßas √† civiliz√ß√£o humana "
+                        + "come√ßam com algu√©m. Uma pessoa. E uma pessoa n√£o consegue fazer tudo, mas cada uma pode fazer uma parte.");
                 break;
 
             case 1:
                 System.out.println ("Cowspiracy talvez seja o mais importante filme para inspirar a salvar o planeta.\r\n"
-                        + "Louie Psihoyos, diretor do document·rio The Cove, ganhador do Oscar");
+                        + "Louie Psihoyos, diretor do document√°rio The Cove, ganhador do Oscar");
                 break;
 
             case 2:
-                System.out.println ("\"NÛs nos contentamos com o mundo como È ou trabalhamos para um mundo como ele deveria ser?\" - Michelle Obama");
+                System.out.println ("\"N√≥s nos contentamos com o mundo como √© ou trabalhamos para um mundo como ele deveria ser?\" - Michelle Obama");
                 break;
 
             default:
-                System.out.println ("\"… crucial proteger nossas democracias\"");
+                System.out.println ("\"√â crucial proteger nossas democracias\"");
         }
 
     }

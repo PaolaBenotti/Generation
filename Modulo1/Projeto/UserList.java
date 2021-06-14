@@ -1,4 +1,4 @@
-package Projeto;
+package gen;
 
 import java.util.ArrayList;
 
@@ -16,6 +16,6 @@ public class UserList {
     static Perfil Paola = new Perfil("Paola", 22, "pbenotti@gmail.com", "Rua Solano 13", 798980101, "101010101011", "Visa",
             "1111 2222 3333 4444", "Individual", "pbtt", "1110");
 
-    static Perfil Zinha = new Perfil ("Zinha ", 19, "zinha07@gmail.com", "Rua São Paulo, Número: 12", 998761235,
-            "12345678900", "Master", "1234567891234567", "Família", "zinhafofinha", "zinha12");
+    static Perfil Zinha = new Perfil ("Zinha ", 19, "zinha07@gmail.com", "Rua SÃ£o Paulo, NÃºmero: 12", 998761235,
+            "12345678900", "Master", "1234567891234567", "FamÃ­lia", "zinhafofinha", "zinha12");
 }

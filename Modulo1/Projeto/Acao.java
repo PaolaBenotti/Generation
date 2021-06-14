@@ -1,4 +1,4 @@
-package Projeto;
+package gen;
 
 import java.util.Scanner;
 
@@ -10,7 +10,7 @@ public class Acao extends Filme {
     public Acao (String nome, String categoria, int duracao, String classificacaoIndicativa,
                  int momento, String descricao)
     {
-        super(nome,"Ação",duracao,classificacaoIndicativa,momento,descricao);
+        super(nome,"AÃ§Ã£o",duracao,classificacaoIndicativa,momento,descricao);
 
     }
     @Override
@@ -22,16 +22,16 @@ public class Acao extends Filme {
         switch(n)
         {
             case 0:
-                System.out.println ("Com grandes poderes vêm grandes responsabilidades!");
+                System.out.println ("Com grandes poderes vÃªm grandes responsabilidades!");
                 break;
             case 1:
-                System.out.println ("Isto é Esparta!");
+                System.out.println ("Isto Ã© Esparta!");
                 break;
             case 2:
                 System.out.println ("Pede pra sair!");
                 break;
             default:
-                System.out.println ("Meu nome é Bond, James Bond!");
+                System.out.println ("Meu nome Ã© Bond, James Bond!");
 
         }
     }

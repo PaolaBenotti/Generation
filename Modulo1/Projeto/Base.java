@@ -1,31 +1,45 @@
-package Projeto;
+package gen;
 
 import java.util.*;
-
 public class Base extends UserList{
 
     public static void main(String[] args) {
 
-        //InicializaÁ„o do database de filmes
+        //Inicializa√ß√£o do database de filmes
         ArrayList< ArrayList<Filme> > movieDB = new ArrayList< ArrayList<Filme> >(10);
         for(int i = 0; i < 10; i++){
             movieDB.add(new ArrayList<Filme>());
             for(int j = 0; j < 37; j++){
                 //Consertar isso com aqui com todos os tipos de filmes
-                if(i == 0) movieDB.get(0).add(new Animacao("AnimaÁ„o " + j, "AnimaÁ„o", 120, "Livre", 0, "DescriÁ„o Teste"));
-                if(i == 1) movieDB.get(1).add(new Ficcao("FicÁ„o  " + j, "FicÁ„o CientÌfica", 120, "Livre", 0, "DescriÁ„o Teste"));
-                if(i == 2) movieDB.get(2).add(new Suspense("Suspense " + j, "Suspense", 120, "Livre", 0, "DescriÁ„o Teste"));
-                if(i == 3) movieDB.get(3).add(new Terror("Terror " + j, "Terror", 120, "Livre", 0, "DescriÁ„o Teste"));
-                if(i == 4) movieDB.get(4).add(new Aventura("Aventura " + j, "Aventura", 120, "Livre", 0, "DescriÁ„o Teste"));
-                if(i == 5) movieDB.get(5).add(new Comedia("ComÈdia " + j, "ComÈdia", 120, "Livre", 0, "DescriÁ„o Teste"));
-                if(i == 6) movieDB.get(6).add(new Romance("Romance " + j, "Romance", 120, "Livre", 0, "DescriÁ„o Teste"));
-                if(i == 7) movieDB.get(7).add(new Acao("AÁ„o " + j, "AÁ„o", 120, "Livre", 0, "DescriÁ„o Teste"));
-                if(i == 8) movieDB.get(8).add(new Drama("Drama " + j, "Drama", 120, "Livre", 0, "DescriÁ„o Teste"));
-                if(i == 9) movieDB.get(9).add(new Documentarios("Document·rio " + j, "Document·rios", 120, "Livre", 0, "DescriÁ„o Teste"));
+                if(i == 0) movieDB.get(0).add(new Animacao("Anima√ß√£o " + j, "Anima√ß√£o", 120, "Livre", 0, "Descri√ß√£o Teste"));
+                if(i == 1) movieDB.get(1).add(new Ficcao("Fic√ß√£o  " + j, "Fic√ß√£o Cient√≠fica", 120, "Livre", 0, "Descri√ß√£o Teste"));
+                if(i == 2) movieDB.get(2).add(new Suspense("Suspense " + j, "Suspense", 120, "Livre", 0, "Descri√ß√£o Teste"));
+                if(i == 3) movieDB.get(3).add(new Terror("Terror " + j, "Terror", 120, "Livre", 0, "Descri√ß√£o Teste"));
+                if(i == 4) movieDB.get(4).add(new Aventura("Aventura " + j, "Aventura", 120, "Livre", 0, "Descri√ß√£o Teste"));
+                if(i == 5) movieDB.get(5).add(new Comedia("Com√©dia " + j, "Com√©dia", 120, "Livre", 0, "Descri√ß√£o Teste"));
+                if(i == 6) movieDB.get(6).add(new Romance("Romance " + j, "Romance", 120, "Livre", 0, "Descri√ß√£o Teste"));
+                if(i == 7) movieDB.get(7).add(new Acao("A√ß√£o " + j, "A√ß√£o", 120, "Livre", 0, "Descri√ß√£o Teste"));
+                if(i == 8) movieDB.get(8).add(new Drama("Drama " + j, "Drama", 120, "Livre", 0, "Descri√ß√£o Teste"));
+                if(i == 9) movieDB.get(9).add(new Documentarios("Document√°rio " + j, "Document√°rios", 120, "Livre", 0, "Descri√ß√£o Teste"));
             }
         }
 
-        //InicializaÁ„o do database de usu·rios
+        //Apresenta√ß√£o
+        movieDB.get(4).get(15).setNome("O Senhor dos An√©is - A Sociedade do Anel");
+        movieDB.get(4).get(15).setCategoria("Aventura");
+        movieDB.get(4).get(15).setDuracao(228);
+        movieDB.get(4).get(15).setClassificacaoIndicativa("N√£o recomendado para menores de 12 anos");
+        movieDB.get(4).get(15).setDescricao("Em uma terra fant√°stica e √∫nica, um hobbit recebe de presente de seu tio um anel m√°gico e maligno que precisa ser destru√≠do antes \nque caia nas m√£os do mal. Para isso, o hobbit Frodo tem um caminho √°rduo pela frente, onde encontra perigo, medo e seres bizarros.\n Ao seu lado para o cumprimento desta jornada, ele aos poucos pode contar com outros hobbits, um elfo, um an√£o, dois humanos e um mago, \ntotalizando nove seres que formam a Sociedade do Anel.");
+
+        //Apresenta√ß√£o
+        movieDB.get(1).get(15).setNome("Interestelar");
+        movieDB.get(1).get(15).setCategoria("Aventura/Fic√ß√£o Cient√≠fica");
+        movieDB.get(1).get(15).setDuracao(169);
+        movieDB.get(1).get(15).setClassificacaoIndicativa("N√£o recomendado para menores de 10 anos");
+        movieDB.get(1).get(15).setDescricao("As reservas naturais da Terra est√£o chegando ao fim e um grupo de astronautas recebe a miss√£o de verificar poss√≠veis planetas para \nreceberem a popula√ß√£o mundial, possibilitando a continua√ß√£o da esp√©cie. Cooper √© chamado para liderar o grupo e aceita a miss√£o \nsabendo que pode nunca mais ver os filhos. Ao lado de Brand, Jenkins e Doyle, ele seguir√° em busca de um novo lar.\n");
+
+
+        //Inicializa√ß√£o do database de usu√°rios
         ArrayList<Perfil> userDB = new ArrayList<Perfil>();
         userDB.add(Bruno);
         userDB.add(Ed);
@@ -43,16 +57,16 @@ public class Base extends UserList{
             Perfil profile = init.IniciarSessao();
             UserInterface user = new UserInterface(profile.getNome(), profile.getEmail(), profile.getPlano(), profile.getLogin(), profile.getSenha());
 
-            // - Loop principal do menu de usu·rio
+            // - Loop principal do menu de usu√°rio
             while (true) {
 
-                System.out.println("-----MENU DE USU¡RIO-----");
+                System.out.println("-----MENU DE USU√ÅRIO-----");
                 System.out.println("Digite o que gostaria de fazer: ");
                 System.out.println("1 - Iniciar filme atual");
                 System.out.println("2 - Buscar Filmes");
-                System.out.println("3 - Nossa indicaÁ„o para vocÍ");
+                System.out.println("3 - Nossa indica√ß√£o para voc√™");
                 System.out.println("4 - Pontos GenFlix");
-                System.out.println("5 - Acessar configuraÁıes de usu·rio");
+                System.out.println("5 - Acessar configura√ß√µes de usu√°rio");
                 System.out.println("6 - Sair");
 
                 int x = user.checker(1, 6, "");
@@ -60,7 +74,7 @@ public class Base extends UserList{
 
                 // - Iniciar o filme atual
                 if (x == 1) {
-                    if(movie == null) System.out.println("VocÍ n„o selecionou um filme!\n\n");
+                    if(movie == null) System.out.println("Voc√™ n√£o selecionou um filme!\n\n");
                     else{
                         user.start(movie);
                         movie.efeitoVisual();
@@ -75,9 +89,9 @@ public class Base extends UserList{
                             System.out.println("1 - Continuar / Pausar");
                             System.out.println("2 - Parar");
                             System.out.println("3 - Favoritar");
-                            System.out.println("4 - Deixar avaliaÁ„o");
-                            System.out.println("5 - Deixar coment·rio");
-                            System.out.println("6 - Ver avaliaÁıes");
+                            System.out.println("4 - Deixar avalia√ß√£o");
+                            System.out.println("5 - Deixar coment√°rio");
+                            System.out.println("6 - Ver avalia√ß√µes");
 
                             int y = user.checker(1, 6, "");
                             user.clear();
@@ -102,8 +116,8 @@ public class Base extends UserList{
                             }
                             if (y == 5) {
                                 String s = user.comment();
-                                movie.getComentario().add("\n\"" + s + "\"\n   óó " + user.getNome());
-                                System.out.println("Muito Obrigado! Sua opini„o È muito importante para nÛs!");
+                                movie.getComentario().add("\n\"" + s + "\"\n   ‚Äî‚Äî " + user.getNome());
+                                System.out.println("Muito Obrigado! Sua opini√£o √© muito importante para n√≥s!");
 
                             }
                             if (y == 6) {
@@ -124,16 +138,16 @@ public class Base extends UserList{
                 // - Procurar por um filme
                 else if (x == 2) {
                     System.out.println("-----ESCOLHA UMA CATEGORIA-----");
-                    System.out.println("0 - AnimaÁ„o");
-                    System.out.println("1 - FicÁ„o CientÌfica");
+                    System.out.println("0 - Anima√ß√£o");
+                    System.out.println("1 - Fic√ß√£o Cient√≠fica");
                     System.out.println("2 - Suspense");
                     System.out.println("3 - Terror");
                     System.out.println("4 - Aventura");
-                    System.out.println("5 - ComÈdia");
+                    System.out.println("5 - Com√©dia");
                     System.out.println("6 - Romance");
-                    System.out.println("7 - AÁ„o");
+                    System.out.println("7 - A√ß√£o");
                     System.out.println("8 - Drama");
-                    System.out.println("9 - Document·rios");
+                    System.out.println("9 - Document√°rios");
 
                     int y = user.checker(0, 9, "");
                     user.clear();
@@ -148,7 +162,7 @@ public class Base extends UserList{
                             System.out.println(cnt + " - " + movieDB.get(y).get(p++).getNome());
                         }
                         System.out.println(cnt++ + " - Voltar");
-                        System.out.println(cnt++ + " - AvanÁar");
+                        System.out.println(cnt++ + " - Avan√ßar");
                         System.out.println(cnt + " - Sair");
                         int z = user.checker(1, cnt, "");
                         user.clear();
@@ -156,50 +170,57 @@ public class Base extends UserList{
                         else if (z == cnt - 1) p = Math.min(p, movieDB.get(y).size() - 6);
                         else if (z == cnt - 2) p = Math.max(0, p - 12);
                         else {
-                            movie = movieDB.get(y).get(15);
-                            movie.apresentarInfo();
+                            //Apresenta√ß√£o
+                            if(user.getLogin() == "brunologin" || user.getLogin() == "zinhafofinha") {
+                                movie = movieDB.get(4).get(15);
+                                movie.apresentarInfo();
+                            }
+                            else{
+                                movie = movieDB.get(y).get(15);
+                            }
                             break;
                         }
                     }
 
                 }
 
-                // - Assistir ‡ recomendaÁ„o
+                // - Assistir √† recomenda√ß√£o
                 else if (x == 3) {
                     int cat = (int) (Math.random() * 10);
                     int mov = (int) (Math.random() * movieDB.get(cat).size());
-                    Filme rec = movieDB.get(cat).get(mov);
-                    rec.apresentarInfo();
-                    System.out.println("Gostaria de assistir? (1 - Sim | 2 - N„o)");
+                    //Filme rec = movieDB.get(cat).get(mov);
+                    //rec.apresentarInfo();
+                    movie = movieDB.get(1).get(15);
+                    movie.apresentarInfo();
+                    System.out.println("Gostaria de assistir? (1 - Sim | 2 - N√£o)");
 
-                    int y = user.checker(1, 2, "(1 - Sim | 2 - N„o)");
+                    int y = user.checker(1, 2, "(1 - Sim | 2 - N√£o)");
 
-                    movie = rec;
-
+                    //Apresenta√ß√£o
                 }
 
                 // - Sistema de Pontos
                 else if (x == 4) {
-                    System.out.println("A GenFlix È uma empresa socialmente consciente e para cada filme assistido, ela te presenteia "
-                            + "\ncom pontos que podem ser convertidos em uma contribuiÁ„o monet·ria para ONGs da sua escolha, com projetos como:");
-                    System.out.println("- ProteÁ„o aos Jovens");
-                    System.out.println("- AssistÍncia a Mulheres");
+                    System.out.println("A GenFlix √© uma empresa socialmente consciente e para cada filme assistido, ela te presenteia "
+                            + "\ncom pontos que podem ser convertidos em uma contribui√ß√£o monet√°ria para ONGs da sua escolha, com projetos como:");
+                    System.out.println("- Prote√ß√£o aos Jovens");
+                    System.out.println("- Assist√™ncia a Mulheres");
                     System.out.println("- Reflorestamento");
                     System.out.println("- Apoio hospitalar");
-                    System.out.println("- AuxÌlio a Idosos");
+                    System.out.println("- Aux√≠lio a Idosos");
                     System.out.println("- Resgate de animais abandonados");
                     System.out.println("- Assessoria a defencientes");
-                    System.out.println("N˙mero de moedas GenFlix: " + user.getTotalWatched());
+                    System.out.println("\nN√∫mero de moedas GenFlix: " + user.getTotalWatched());
                     System.out.println();
                     System.out.println();
                     System.out.println();
                 }
 
-                // - Loop secund·rio das configuraÁıes de usu·rio
+                // - Loop secund√°rio das configura√ß√µes de usu√°rio
                 else if (x == 5) {
                     while (true) {
-                        System.out.println("-----MENU DE CONFIGURA«’ES-----");
-                        System.out.println("1 - Dados do Usu·rio");
+                        System.out.println("-----MENU DE CONFIGURA√á√ïES-----");
+                        System.out.println("1 - Dados do Usu√°rio");
                         System.out.println("2 - Alterar Email");
                         System.out.println("3 - Alterar Senha");
                         System.out.println("4 - Alterar Plano");
@@ -226,3 +247,4 @@ public class Base extends UserList{
     }
 
 }
+

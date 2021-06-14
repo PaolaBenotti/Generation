@@ -1,9 +1,10 @@
-package Projeto;
+package gen;
+
 
 import java.util.Scanner;
 import java.util.ArrayList;
 
-// - Classe destinada a interações do usuário com a plataforma
+// - Classe destinada a interaÃ§Ãµes do usuÃ¡rio com a plataforma
 public class UserInterface extends Perfil {
 
     // - Propriedades
@@ -29,7 +30,7 @@ public class UserInterface extends Perfil {
         while (x < a || x > b) {
             x = in.nextInt();
             if (x >= a && x <= b) break;
-            System.out.printf("Opção inválida! Digite um número entre %d e %d: %s\n", a , b, c);
+            System.out.printf("OpÃ§Ã£o invÃ¡lida! Digite um nÃºmero entre %d e %d: %s\n", a , b, c);
         }
         return x;
     }
@@ -55,10 +56,10 @@ public class UserInterface extends Perfil {
 
     }
 
-    // - Método para iniciar filme
+    // - MÃ©todo para iniciar filme
     public void start (Filme mov) {
 
-        System.out.println("\nO filme " + mov.getNome() + " já irá iniciar!");
+        System.out.println("\nO filme " + mov.getNome() + " jÃ¡ irÃ¡ iniciar!");
         System.out.println("Selecione o idioma: (1 - PT | 2 - EN | 3 - ES)");
 
         int aux = checker(1, 3, "(1 - PT | 2 - EN | 3 - ES)");
@@ -69,21 +70,21 @@ public class UserInterface extends Perfil {
 
         if (aux == 1) System.out.println("\nBom filme!\n ");
         if (aux == 2) System.out.println("\nHave a nice movie!\n ");
-        if (aux == 3) System.out.println("\nBuena película!\n ");
+        if (aux == 3) System.out.println("\nBuena pelÃ­cula!\n ");
     }
 
-    // - Método para favoritar um filme
+    // - MÃ©todo para favoritar um filme
     public void addFavs(Filme mov) {
         System.out.println("O filme " + mov.getNome() + " foi adicionado aos seus favoritos. ");
         favs.add(mov);
     }
 
-    // - Método para avaliar um filme
+    // - MÃ©todo para avaliar um filme
     // - USAR EXCEPTIONS
     public int rate(Filme mov) {
         System.out.println("Digite uma nota entre 0 e 5: ");
         int ret = checker(0, 5, "");
-        System.out.println("Muito Obrigado! Sua opinião é muito importante para nós!");
+        System.out.println("Muito Obrigado! Sua opiniÃ£o Ã© muito importante para nÃ³s!");
         return ret;
     }
 
@@ -91,9 +92,9 @@ public class UserInterface extends Perfil {
         System.out.printf("Nota geral do filme: %.1f\n",mov.getNota()/(1.0*mov.getContaNota()));
     }
 
-    // - Método para adicionar um comentário após avaliar um filme
+    // - MÃ©todo para adicionar um comentÃ¡rio apÃ³s avaliar um filme
     String comment(){
-        System.out.printf("Escreve um comentário: ");
+        System.out.printf("Escreve um comentÃ¡rio: ");
         String s = in.nextLine();
         s = in.nextLine();
         return s;

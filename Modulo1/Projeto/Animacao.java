@@ -1,4 +1,4 @@
-package Projeto;
+package gen;
 
 import java.util.Scanner;
 
@@ -10,7 +10,7 @@ public class Animacao extends Filme {
     public Animacao (String nome, String categoria, int duracao, String classificacaoIndicativa,
                      int momento, String descricao)
     {
-        super(nome,"AnimaÁ„o",duracao,classificacaoIndicativa,momento,descricao);
+        super(nome,"Anima√ß√£o",duracao,classificacaoIndicativa,momento,descricao);
 
     }
 
@@ -22,16 +22,16 @@ public class Animacao extends Filme {
         switch(n)
         {
             case 0:
-                System.out.println ("Como diz o Buzz Lightyear: ao infinito e alÈm!");
+                System.out.println ("Como diz o Buzz Lightyear: ao infinito e al√©m!");
                 break;
             case 1:
-                System.out.println ("Se podemos sonhar, tambÈm podemos tornar nossos sonhos realidade.");
+                System.out.println ("Se podemos sonhar, tamb√©m podemos tornar nossos sonhos realidade.");
                 break;
             case 2:
-                System.out.println ("Hakuna matata... È lindo dizer!");
+                System.out.println ("Hakuna matata... √© lindo dizer!");
                 break;
             default:
-                System.out.println ("Por isso: necess·rio, somente o necess·rio...o extraordin·rio È demais!!!");
+                System.out.println ("Por isso: necess√°rio, somente o necess√°rio...o extraordin√°rio √© demais!!!");
 
         }
     }

@@ -1,4 +1,4 @@
-package Projeto;
+package gen;
 
 import java.util.*;
 
@@ -56,7 +56,7 @@ public class Perfil {
     
     public void alterarSenha() {
 
-        System.out.println("\n\n-----ALTERA«√O DE SENHA-----");
+        System.out.println("\n\n-----ALTERA√á√ÉO DE SENHA-----");
 
 
         System.out.print("\nDigite a senha antiga: ");
@@ -85,7 +85,7 @@ public class Perfil {
 
     public void alterarEmail() {
 
-        System.out.println("\n\n-----ALTERA«√O DE EMAIL-----");
+        System.out.println("\n\n-----ALTERA√á√ÉO DE EMAIL-----");
 
 
         System.out.print("\nDigite a senha: ");
@@ -114,7 +114,7 @@ public class Perfil {
 
     public void alterarPlano() {
 
-        System.out.println("\n\n-----ALTERA«√O DE PLANO-----");
+        System.out.println("\n\n-----ALTERA√á√ÉO DE PLANO-----");
 
 
         System.out.print("\nDigite a senha: ");
@@ -124,14 +124,14 @@ public class Perfil {
 
         if (aux.equals(this.senha)) {
 
-            System.out.println("Escolha o novo plano: (1-Individual | 2-Casal | 3-FamÌlia)");
+            System.out.println("Escolha o novo plano: (1-Individual | 2-Casal | 3-Fam√≠lia)");
 
             int x = read.nextInt();
 
             if (x < 0 || x > 3) {
                 while (x < 0 || x > 3) {
 
-                    System.out.println("Plano inv·lido! Digite novamente.");
+                    System.out.println("Plano inv√°lido! Digite novamente.");
                     x = read.nextInt();
                 }
             }
@@ -148,8 +148,8 @@ public class Perfil {
 
             } else if (x == 3) {
 
-                setPlano("FamÌlia");
-                System.out.println("Plano FamÌlia selecionado!");
+                setPlano("Fam√≠lia");
+                System.out.println("Plano Fam√≠lia selecionado!");
 
             }
 
@@ -165,9 +165,9 @@ public class Perfil {
     public void validarDados() {
 
         if (getCpf().length() != 11) {
-            System.out.println("\n--CPF Inv·lido--");
+            System.out.println("\n--CPF Inv√°lido--");
         } else {
-            System.out.println("\n--CPF V·lido--");
+            System.out.println("\n--CPF V√°lido--");
         }
 
         if (getIdade() < 14) {
@@ -181,18 +181,18 @@ public class Perfil {
         }
 
         if (getNumeroCartao().length() != 16) {
-            System.out.println("\n--N˙mero de cart„o Inv·lido--");
+            System.out.println("\n--N√∫mero de cart√£o Inv√°lido--");
         } else {
-            System.out.println("\n--N˙mero de cart„o V·lido--");
+            System.out.println("\n--N√∫mero de cart√£o V√°lido--");
         }
 
     }
 
     public void apresentarDados() {
 
-        System.out.println("\nNome: " + nome + "\nIdade: " + idade + "\nEmail: " + email + "\nEndereÁo: " + endereco
-                + "\nTelefone: " + telefone + "\nCPF: " + cpf + "\nBandeira do Cart„o: " + bandeira
-                + "\nN˙mero do Cart„o: " + numeroCartao + "\nPlano: " + plano);
+        System.out.println("\nNome: " + nome + "\nIdade: " + idade + "\nEmail: " + email + "\nEndere√ßo: " + endereco
+                + "\nTelefone: " + telefone + "\nCPF: " + cpf + "\nBandeira do Cart√£o: " + bandeira
+                + "\nN√∫mero do Cart√£o: " + numeroCartao + "\nPlano: " + plano);
     }
 
     public String getNome() {

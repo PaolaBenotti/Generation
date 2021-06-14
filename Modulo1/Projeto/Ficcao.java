@@ -1,4 +1,4 @@
-package Projeto;
+package gen;
 
 import java.util.Scanner;
 
@@ -10,7 +10,7 @@ public class Ficcao extends Filme {
     public Ficcao (String nome, String categoria, int duracao, String classificacaoIndicativa,
                    int momento, String descricao)
     {
-        super(nome,"Ficção Científica",duracao,classificacaoIndicativa,momento,descricao);
+        super(nome,"FicÃ§Ã£o CientÃ­fica",duracao,classificacaoIndicativa,momento,descricao);
 
     }
     @Override
@@ -28,10 +28,10 @@ public class Ficcao extends Filme {
                 System.out.println ("Hasta la vista, baby!");
                 break;
             case 2:
-                System.out.println ("Que a força esteja com você!");
+                System.out.println ("Que a forÃ§a esteja com vocÃª!");
                 break;
             default:
-                System.out.println ("Vida longa e próspera!");
+                System.out.println ("Vida longa e prÃ³spera!");
 
         }
     }

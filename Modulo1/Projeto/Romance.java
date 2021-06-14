@@ -1,4 +1,4 @@
-package Projeto;
+package gen;
 
 import java.util.Scanner;
 
@@ -117,11 +117,11 @@ public class Romance extends Filme {
         switch(n)
         {
             case 0:
-                System.out.println ("Eu não faço o que as pessoas esperam. Pra que viver do modo que as pessoas esperam, se eu posso viver do meu.");
+                System.out.println ("Eu nÃ£o faÃ§o o que as pessoas esperam. Pra que viver do modo que as pessoas esperam, se eu posso viver do meu.");
                 break;
 
             case 1:
-                System.out.println ("Não é sobre o que aconteceu no passado, ou o que você acha que pode acontecer no futuro. É sobre o passeio.");
+                System.out.println ("NÃ£o Ã© sobre o que aconteceu no passado, ou o que vocÃª acha que pode acontecer no futuro. Ã‰ sobre o passeio.");
                 break;
 
             case 2:

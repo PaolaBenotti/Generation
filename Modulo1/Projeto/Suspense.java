@@ -1,4 +1,4 @@
-package Projeto;
+package gen;
 
 import java.util.Scanner;
 
@@ -22,16 +22,16 @@ public class Suspense extends Filme {
         switch(n)
         {
             case 0:
-                System.out.println ("As coisas que você possui acabam possuindo você.");
+                System.out.println ("As coisas que vocÃª possui acabam possuindo vocÃª.");
                 break;
             case 1:
-                System.out.println ("Pensa isso mesmo, ou é assim que eles querem que você pense?");
+                System.out.println ("Pensa isso mesmo, ou Ã© assim que eles querem que vocÃª pense?");
                 break;
             case 2:
-                System.out.println ("Creio no riso e nas lágrimas como antídotos contra o ódio e o terror...");
+                System.out.println ("Creio no riso e nas lÃ¡grimas como antÃ­dotos contra o Ã³dio e o terror...");
                 break;
             default:
-                System.out.println ("A mente é algo terrível de se desperdiçar.");
+                System.out.println ("A mente Ã© algo terrÃ­vel de se desperdiÃ§ar.");
 
         }
     }

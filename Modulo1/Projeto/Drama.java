@@ -1,4 +1,4 @@
-package Projeto;
+package gen;
 
 import java.util.Scanner;
 
@@ -23,16 +23,16 @@ public class Drama extends Filme {
         switch(n)
         {
             case 0:
-                System.out.println ("Odeio não conseguir te odiar por mais que eu tente ou por menos que você faça...");
+                System.out.println ("Odeio nÃ£o conseguir te odiar por mais que eu tente ou por menos que vocÃª faÃ§a...");
                 break;
             case 1:
-                System.out.println ("Às vezes é preciso esquecer o passado para que se tenha um futuro.");
+                System.out.println ("Ã€s vezes Ã© preciso esquecer o passado para que se tenha um futuro.");
                 break;
             case 2:
                 System.out.println ("Okay?...Okay");
                 break;
             default:
-                System.out.println ("A única coisa pela qual se vale a pena viver.");
+                System.out.println ("A Ãºnica coisa pela qual se vale a pena viver.");
 
         }
     }

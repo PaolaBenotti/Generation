@@ -1,4 +1,4 @@
-package Projeto;
+package gen;
 
 import java.util.Scanner;
 
@@ -25,13 +25,13 @@ public class Terror extends Filme {
                 System.out.println ("Que os jogos comecem!");
                 break;
             case 1:
-                System.out.println ("Aconteça o que acontecer, não olhe para trás.");
+                System.out.println ("AconteÃ§a o que acontecer, nÃ£o olhe para trÃ¡s.");
                 break;
             case 2:
                 System.out.println ("Eu vejo pessoas mortas!");
                 break;
             default:
-                System.out.println ("Oi, meu nome é Chuck. Você quer brincar?");
+                System.out.println ("Oi, meu nome Ã© Chuck. VocÃª quer brincar?");
 
         }
     }

@@ -1,5 +1,4 @@
-package Projeto;
-
+package gen;
 
 import java.util.ArrayList;
 import java.util.Scanner;
@@ -110,8 +109,8 @@ public abstract class Filme {
 	public void apresentarInfo()
 
 	{
-		System.out.println("Filme: "+nome+"\nCategoria: "+categoria+"\nDuração: "+duracao
-				+"\nClassificação indicativa: "+classificacaoIndicativa+"\n -----Descrição-----\n"+descricao);
+		System.out.println("Filme: "+nome+"\nCategoria: "+categoria+"\nDuraÃ§Ã£o: "+duracao
+				+"\nClassificaÃ§Ã£o indicativa: "+classificacaoIndicativa+"\n -----DescriÃ§Ã£o-----\n"+descricao);
 
 		System.out.println();
 		System.out.println();

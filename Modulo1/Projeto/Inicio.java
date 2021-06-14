@@ -1,4 +1,4 @@
-package Projeto;
+package gen;
 
 import java.util.ArrayList;
 import java.util.Scanner;
@@ -19,7 +19,7 @@ public class Inicio {
 	public Perfil IniciarSessao()
 	{
 
-		System.out.println("\n\n-----INICIAR SESS√O-----");
+		System.out.println("\n\n-----INICIAR SESS√ÉO-----");
         System.out.print("\nLogin ou Email: ");
         String x = read.next();
         
@@ -37,7 +37,7 @@ public class Inicio {
 
 
         while(!done) {
-            System.out.println("CombinÁ„o inv·lida! ");
+            System.out.println("Combin√ß√£o inv√°lida! ");
             System.out.print("\nLogin ou Email: ");
             x = read.next();
             System.out.print("Senha: ");

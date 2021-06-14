@@ -1,4 +1,4 @@
-package Projeto;
+package gen;
 
 import java.util.Scanner;
 
@@ -128,19 +128,19 @@ public class Comedia extends Filme{
         switch(n)
         {
             case 0:
-                System.out.println ("Ah, você está tendo um dia ruim. Por acaso você morreu? Então seu dia está ótimo.");
+                System.out.println ("Ah, vocÃª estÃ¡ tendo um dia ruim. Por acaso vocÃª morreu? EntÃ£o seu dia estÃ¡ Ã³timo.");
                 break;
 
             case 1:
-                System.out.println ("A vida em primeiro lugar é sempre emocionante.");
+                System.out.println ("A vida em primeiro lugar Ã© sempre emocionante.");
                 break;
 
             case 2:
-                System.out.println ("Jesus às vezes se disfarça de mendigo pra testar a bondade dos homens");
+                System.out.println ("Jesus Ã s vezes se disfarÃ§a de mendigo pra testar a bondade dos homens");
                 break;
 
             default:
-                System.out.println ("Ambos precisam do que o outro tem. Isso os mantém unidos.");
+                System.out.println ("Ambos precisam do que o outro tem. Isso os mantÃ©m unidos.");
         }
 
     }
