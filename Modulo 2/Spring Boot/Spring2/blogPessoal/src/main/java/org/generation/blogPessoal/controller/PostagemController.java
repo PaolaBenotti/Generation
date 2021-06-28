@@ -19,31 +19,23 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/postagens")
-@CrossOrigin("*") /* aceitar requisições de qualquer origem */
+@CrossOrigin("*") 
 public class PostagemController {
-	@Autowired /* garantir que os serviços do postagem vai ser acessado pelo controle */
+	@Autowired 
 	private PostagemRepository repository;
 
-	@GetMapping /* vai disparar o resto debaixo */
-	public ResponseEntity<List<Postagem>> GetAll() { /* pega todos */
+	@GetMapping 
+	public ResponseEntity<List<Postagem>> GetAll() {
 		return ResponseEntity.ok(repository.findAll());
 	}
 
-	@GetMapping("/{id}") /*
-							 * para pegar o valor que entrar ,para pegar o caminho,meio q uma variavel do
-							 * caminho,por ID
-							 */
+	@GetMapping("/{id}")
 	public ResponseEntity<Postagem> GetById(@PathVariable long id) {
 		return repository.findById(id).map(resp -> ResponseEntity.ok(resp)).orElse(ResponseEntity.notFound().build());
-		/*
-		 * Assim que for feito o acesso em id,vai ser acessado diretamento esse
-		 * metodo,ele vai capturar a variavel que vai ser acessado dentro do
-		 * patchvariavel,vai para o metodo debaixo que é um ok ou um não encontrado
-		 */
 	}
 
 	/* Pelo tituto */
-	@GetMapping("/titulo/{titulo}") /* depois de uma barra o ultimo dado na ia entender ,ia dar duplicidade. */
+	@GetMapping("/titulo/{titulo}") 
 	public ResponseEntity<List<Postagem>> GetByTitulo(@PathVariable String titulo) {
 		return ResponseEntity.ok(repository.findAllByTituloContainingIgnoreCase(titulo));
 	}
