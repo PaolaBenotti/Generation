@@ -25,14 +25,14 @@ import org.springframework.boot.test.context.SpringBootTest.WebEnvironment;
     	
     @BeforeEach
     public void start() {
-    	contato = new BlogPessoalModel(null, "Gabriel", "011y", "9xxxxxxx9");
+    	contato = new BlogPessoalModel(null, "Paola", "011", "90003459");
     	}
     	
     @Test
     public void testValidationAtributos(){
-    	contato.setNome("João");
-    	contato.setDdd("011");
-    	contato.setTelefone("21837559");
+    	contato.setNome("Mario");
+    	contato.setDdd("012");
+    	contato.setTelefone("98765432");
     	Set<ConstraintViolation<BlogPessoalModel>> violations = validator.validate(contato);
         System.out.println(violations.toString());
         assertTrue(violations.isEmpty());
